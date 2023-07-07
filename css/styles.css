@@ -4,6 +4,7 @@ header {
   overflow-y: hidden;
 }
 
+
 nav {
   width: 85%;
   margin: 1rem auto 0;
@@ -17,6 +18,11 @@ nav {
   color: #8ffd00;
 }
 
+.nav-link:focus{
+  color:#8ffd00;
+}
+
+
 .navbar-brand {
   margin-right: 7rem;
 }
@@ -26,12 +32,29 @@ nav {
   border-radius: 0%;
   color: #fff;
   padding: 10px 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+
 }
 
-.touch-btn:hover {
-  color: #8ffd00;
-  border-color: #8ffd00;
+.touch-btn::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #8ffd00;
+  top: 0;
+  left: 0;
+  z-index : -1;
+  transition: all 0.35s;
 }
+
+.touch-btn:hover:before{
+  width: 100%;
+}
+
 
 .big-icon {
   color: #8ffd00;
