@@ -1,0 +1,125 @@
+header {
+  height: 100vh;
+  background-color: black;
+  overflow-y: hidden;
+}
+
+nav {
+  width: 85%;
+  margin: 1rem auto 0;
+}
+
+.act {
+  color: #8ffd00;
+}
+
+.nav-link:hover {
+  color: #8ffd00;
+}
+
+.navbar-brand {
+  margin-right: 7rem;
+}
+
+.touch-btn {
+  border: 1.5px solid #fff;
+  border-radius: 0%;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.touch-btn:hover {
+  color: #8ffd00;
+  border-color: #8ffd00;
+}
+
+.big-icon {
+  color: #8ffd00;
+}
+
+.small-icon {
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+}
+
+ul {
+  width: 45%;
+}
+
+.jumbo-txt {
+  width: 85%;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+
+.jumbo-txt .name {
+  font-size: 9rem;
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 1rem;
+  width: 30%;
+  line-height: 1;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.jumbo-txt .desc {
+  color: #5e5f5e;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotatefor {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateback {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+i.fa-xl {
+  animation: rotatefor 5s linear infinite;
+}
+
+.small-icon {
+  animation: rotateback 5s linear infinite;
+}
+
+@keyframes slide {
+    from{
+        width : 0;
+    } 
+    to{
+        width: 100%;
+    }
+}
+
+
+hr{
+    margin : 0;
+    border: none;
+    height: 1px;
+    width : 0;
+    background-color: #8ffd00 !important;
+    opacity:1;
+}
+
