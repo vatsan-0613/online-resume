@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online resume</title>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2ac65f1340.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher&family=Poppins&family=Roboto&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+<script src="https://kit.fontawesome.com/2ac65f1340.js" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><i class="fa-solid fa-certificate fa-xl big-icon me-1"></i><i class="fa-solid fa-certificate fa-l small-icon"></i></a>
@@ -50,11 +51,140 @@
               </div>
             </div>
           </nav>
-          <div class="jumbo-txt">
-            <p class="name">Sri Vatsan</p>
-            <p class="desc">Hello! my name is Srivatsan, An Aspiring Full Stack Web Developer. <br>I would like to Welcome you to My portfolio</p>
+          <div class="row jumbo-txt">
+            <div class="col-lg-6 order-lg-2 order-2 d-flex align-items-start justify-content-center flex-column"> <p class="name">Srivatsan</p>
+              <p class="desc">Hello! my name is Srivatsan, An Aspiring Full Stack Web Developer and a Machine Learning enthusiast. I would like to Welcome you to My portfolio.</p></div>
+            <div class="col-lg-6 order-lg-2 order-1"><img class="profile-img" src="images/editphoto.png" alt=""></div>
           </div>
-    <header>
+          <!-- <div class="jumbo-txt">
+            <p class="name">Srivatsan</p>
+            <p class="desc">Hello! my name is Srivatsan, An Aspiring Full Stack Web Developer and a Machine Learning enthusiast. I would like to Welcome you to My portfolio.</p>
+          </div> -->
+        </header>
+        <main id="main" class="container">
+          <div class="text">
+          <h3>Our Client</h3>
+          <p class="sub-text">More than 30 clients have worked with me</p>
+        </div>
+        <div class="row">
+          <div class="box col-lg-2 col-md-3 col-sm-4"><img src="images/netflix.png" class="client-img me-2" alt="">Netflix</div>
+          <div class="box col-lg-2 col-md-3 col-sm-4"><img src="images/spotify.png" class="client-img me-2" alt="" >Spotify</div>
+          <div class="box col-lg-2 col-md-3 col-sm-4"><img src="images/meta.png" alt="" class="client-img me-2">Meta</div>
+          <div class="box col-lg-2 col-md-3 col-sm-4"><img src="images/microsoft.png" alt="" class="client-img me-2">Microsoft</div>
+          <div class="box col-lg-2 col-md-6 col-sm-4"><img src="images/google.png" alt="" class="client-img me-2">Google</div>
+          <div class="box col-lg-2 col-md-6 col-sm-4"><img src="images/social.png" alt="" class="client-img me-2">Amazon</div>
+        </div>
+        </main>
+
+        <div class="about-me">
+          <h3 class="about-text">About Me</h3>
+          <p class="about-info">I can deliver results that exceeds your expectations.</p>
+          <button class="btn hire-btn">Hire Me Now <i class="fa-solid arrow fa-arrow-right ms-2"></i></button>
+          <img  class="cube-1" src="images/cube.png" alt="" srcset="" width="10%">
+          <div class="row details float-right">
+            <div class="col-lg-12"><p>Hi, I'm Srivatsan an aspiring full stack web developer and a ML enthusiast. Currently learning the concepts and tech stack that is required to become a professional full stack developer. I am learning the MERN stack and side by side doing some projects. I've embarked on a 100days of code challenge where in I solve problems in leetcode on various data strucutres and post each day status on LinkedIn.</p></div>
+              <div class="col-lg-4 d-flex flex-column align-items-center"><p class="numbers mb-0">312<span class="p-icon">+</span></p><p class="small-text">Project Completed</p></div>
+              <div class="col-lg-4 d-flex flex-column align-items-center"><p class="numbers mb-0">261<span class="p-icon">+</span></p><p class="small-text">World Clients</p></div>
+              <div class="col-lg-4 d-flex flex-column align-items-center"><p class="numbers mb-0">10<span class="p-icon">+</span></p><p class="small-text">Years of Experience</p></div>
+            </div>
+          </p>
+          <img class="cube-2" src="images/cube.png" alt="" width="10%">
+        </div>
+        <div class="scrolling-section">
+        <div class="d-flex scroll-main justify-content-center">
+        <div class="scroll-container">
+          <div class="inner d-flex">
+          <div class="scroll-text">REACT </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">NODE </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">HTML </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">CSS </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">JAVASCRIPT </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">MONGODB </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">REACT </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">NODE </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">HTML </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">CSS </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">JAVASCRIPT </div>
+          <div class="scroll-text">.</div>
+          <div class="scroll-text">MONGODB </div>
+          <div class="scroll-text">.</div>
+          </div>
+          </div>
+        </div>
+        <div class="d-flex scroll-main justify-content-center scroll-2">
+          <div class="scroll-container">
+            <div class="inner d-flex">
+            <div class="scroll-text">REACT </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">NODE </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">HTML </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">CSS </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">JAVASCRIPT </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">MONGODB </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">REACT </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">NODE </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">HTML </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">CSS </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">JAVASCRIPT </div>
+            <div class="scroll-text">.</div>
+            <div class="scroll-text">MONGODB </div>
+            <div class="scroll-text">.</div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="services">
+          <div class="heading">
+            <p>Service</p>
+            <h3>Available services that <br>I can work on</h3>
+          </div>
+          <div class="visual">
+            <h4><span class="p-icon">0.1</span> Design Visual</h4>
+              <p class="visual-desc mt-5">Design that is unique, functional, and beautiful is at the heart of everything we create. We're obsessed with user experience, designing not for ourselves but for real people with real problems.</p>
+          </div>
+          <div class="row">
+            <div class="col box">UI/UX Design</div>
+            <div class="col box">Mockup Design</div>
+            <div class="col box">Design Graphic</div>
+            <div class="col box">Icon Design</div>
+            <div class="col box">Mockup Design</div>
+            <div class="col box">Logo Design</div>
+          </div>
+          <div class="visual classic">
+            <h4><span class="p-icon">0.2</span> Development</h4>
+              <p class="visual-desc mt-5">Design that is unique, functional, and beautiful is at the heart of everything we create. We're obsessed with user experience, designing not for ourselves but for real people with real problems.</p>
+          </div>
+          <div class="row">
+            <div class="col box">UI/UX Design</div>
+            <div class="col box">Mockup Design</div>
+            <div class="col box">Design Graphic</div>
+            <div class="col box">Icon Design</div>
+            <div class="col box">Mockup Design</div>
+            <div class="col box">Logo Design</div>
+          </div>
+        </div>
+
+
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,8 +1,15 @@
-header {
-  height: 100vh;
+body{
   background-color: black;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 
 nav {
@@ -22,10 +29,11 @@ nav {
   color:#8ffd00;
 }
 
-
-.navbar-brand {
-  margin-right: 7rem;
+.profile-img{
+  width: 100%;
 }
+
+
 
 .touch-btn {
   border: 1.5px solid #fff;
@@ -56,6 +64,7 @@ nav {
 }
 
 
+
 .big-icon {
   color: #8ffd00;
 }
@@ -75,19 +84,18 @@ ul {
   width: 85%;
   color: #fff;
   margin: 0 auto;
-  margin-top: 9rem;
 }
 
-.jumbo-txt .name {
-  font-size: 9rem;
+.name {
+  font-size: 7rem;
   font-family: "Yeseva One", cursive;
   margin-bottom: 1rem;
-  width: 30%;
   line-height: 1;
   animation: fadeIn 3s ease-in-out;
 }
 
 .jumbo-txt .desc {
+  width: 100%;
   color: #5e5f5e;
   animation: fadeIn 2s ease-in-out;
 }
@@ -146,3 +154,230 @@ hr{
     opacity:1;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%238ffd00' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.desc{
+  width : 60%;
+  line-height: 1.5;
+}
+
+main{
+  width: 85%;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+}
+.text{
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.text h3{
+  color:#fff;
+  font-family: "Yeseva One", cursive;
+}
+
+.text p{
+  color: #5e5f5e;
+}
+
+.box{
+  border : 1px solid #fff;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color : #fff;
+}
+
+.client-img{
+  width : 15%; 
+}
+
+.row{
+  margin : 0 auto;
+}
+
+.about-me{
+  width: 85%;
+  margin : 0 auto;
+  margin-bottom: 3rem;
+}
+
+.about-text{
+  font-size: 1.2rem;
+  color :#8ffd00;
+  margin-bottom: 1rem;
+}
+
+.about-info{
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Yeseva One", cursive;
+  width : 50%;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.hire-btn{
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+}
+.hire-btn:hover{
+  border-color:#8ffd00;
+  color : #fff;
+}
+
+.arrow{
+  padding-left: 0;
+  transition : padding-left 0.4s;
+}
+
+.btn:hover .arrow{
+    padding-left: 1.4rem;
+}
+
+.cube-1{
+  position: relative;
+  left : 65%;
+  bottom : 4rem;
+  animation : rotatefor 4s infinite linear;
+}
+
+.details{
+  width: 50%;
+  margin-right: 0;
+  color: #fff;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.cube-2{
+  position: relative;
+  bottom: 8rem;
+  left : 3rem;
+  animation: rotateback 4s infinite linear;
+}
+
+.numbers{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.p-icon{
+  color:#8ffd00;
+}
+
+.small-text{
+  font-size: 0.8rem;
+  color:#5e5f5e;
+  font-weight: bolder;
+}
+
+.scroll-main{
+  transform: rotate(7deg);
+  width: 200%;
+  overflow-x: hidden;
+  position: relative;
+  right: 4rem;
+  z-index: 1;
+
+}
+
+.scroll-container{
+  overflow: hidden;
+  background-color: #8ffd00;
+}
+
+.inner{
+  animation: scroller 20s linear infinite;
+  white-space: nowrap;
+}
+
+
+.scroll-text{
+  margin : 0 1rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.scroll-2{
+  transform: rotate(-7deg);
+  position: relative;
+  bottom: 12rem;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.scrolling-section{
+  margin-top: 8rem;
+}
+
+.services{
+  width : 85%;
+  margin: 3rem auto;
+}
+
+.heading{
+  margin : 0 auto;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.heading p{
+  text-align: center;
+  color :#8ffd00;
+  font-size: 1.2rem;
+}
+
+.heading h3{
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.visual h4{
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.visual-desc{
+  width: 50%;
+  position:relative;
+  left : 34rem;
+  margin-bottom: 4rem;
+}
+
+.classic{
+  margin-top: 4rem;
+}
+
+
+@keyframes scroller {
+  0%{
+    transform: translateX(0%);
+  } 
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width : 400px) {
+  .jumbo-txt{
+    margin-top: 3rem;
+  }
+  .name{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .desc{
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+  }
+
+}

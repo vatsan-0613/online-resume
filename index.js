@@ -13,3 +13,4 @@ const links = document.getElementsByClassName('nav-link');
         tar.width = '0';
     })
 })
+
