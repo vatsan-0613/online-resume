@@ -309,6 +309,7 @@ main{
 
 .scroll-3{
   transform: rotate(0deg);
+  margin: 6rem auto;
 }
 
 .services{
@@ -345,6 +346,7 @@ main{
   position:relative;
   left : 34rem;
   margin-bottom: 4rem;
+  color :#5e5f5e;
 }
 
 .classic{
