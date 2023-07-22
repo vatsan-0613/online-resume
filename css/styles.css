@@ -5,11 +5,6 @@ body{
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-
 
 
 nav {
@@ -276,18 +271,16 @@ main{
   font-weight: bolder;
 }
 
+
+
 .scroll-main{
   transform: rotate(7deg);
-  width: 200%;
-  overflow-x: hidden;
-  position: relative;
-  right: 4rem;
   z-index: 1;
-
+  position: relative;
+  width: 200vh;
 }
 
 .scroll-container{
-  overflow: hidden;
   background-color: #8ffd00;
 }
 
@@ -305,14 +298,17 @@ main{
 
 .scroll-2{
   transform: rotate(-7deg);
-  position: relative;
-  bottom: 12rem;
   z-index: 0;
+  bottom: 3.5rem;
   opacity: 0.3;
 }
 
 .scrolling-section{
   margin-top: 8rem;
+}
+
+.scroll-3{
+  transform: rotate(0deg);
 }
 
 .services{
@@ -355,6 +351,42 @@ main{
   margin-top: 4rem;
 }
 
+.foot-before{
+  margin-top:6rem;
+}
+
+.foot-before div h3{
+  color:#8ffd00;
+}
+
+.foot-before div p{
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Yeseva One", cursive;
+}
+
+hr.low{
+  border-color: white;
+  color: #fff;
+  height: 0.1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  background-color: white !important; 
+}
+
+footer{
+  width: 85%;
+  margin : 2rem auto;
+  color: white;
+}
+footer p{
+  width: 50%;
+}
+
+.copy-text{
+  color:#5e5f5e;
+}
 
 @keyframes scroller {
   0%{
@@ -364,6 +396,8 @@ main{
     transform: translateX(-50%);
   }
 }
+
+
 
 @media (max-width : 400px) {
   .jumbo-txt{
